@@ -179,7 +179,7 @@ package Event.management.system;//package Event.management.system;
 //    public void actionPerformed(ActionEvent e) {
 //        if (e.getSource() == b1) {
 //            try {
-//                con c = new con();
+//                connect c = new connect();
 //                String eventno = t2.getText();
 //                String deleteQuery = "DELETE FROM eeeventtt WHERE event_no = ?";
 //                PreparedStatement preparedStatement = c.connection.prepareStatement(deleteQuery);
@@ -210,7 +210,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 public class Delete_event extends JFrame implements ActionListener {
@@ -277,7 +276,7 @@ public class Delete_event extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b1) {
             try {
-                con c = new con();
+                connect c = new connect();
                 String eventno = t2.getText();
                 String deleteQuery = "DELETE FROM eeeventtt WHERE event_no = ?";
                 PreparedStatement preparedStatement = c.connection.prepareStatement(deleteQuery);

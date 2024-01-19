@@ -54,7 +54,7 @@ public class Event_list  extends JFrame {
         panel.add(table);
 
         try{
-            con c=new con();
+            connect c=new connect();
             String  EventInfo="Select * from  eeeventtt";//query
             ResultSet  resultSet=c.statement.executeQuery(EventInfo);//tai  sob  data  resultset  er vitore store hoy  amader query theke
             //DbUtils use korle   akta jar  file  project  er  library  te install korte hoy project er

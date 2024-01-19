@@ -272,7 +272,7 @@
 ////            }
 ////            //connection  crt kore
 ////            try{
-////                con c=new con();//concetion er object
+////                connect c=new connect();//concetion er object
 ////                //value table onusare  aita  query chalay
 ////                String q="insert into add_employee values('"+ name+"','"+ age+"','"+ gender+"','"+job+"','"+ salary+"','"+ phone+"','"+ email+"')";
 ////                c.statement.executeUpdate(q);
@@ -321,7 +321,7 @@
 //            }
 //
 //            try {
-//                con c = new con();
+//                connect c = new connect();
 //                // Assuming you have an employee ID associated with the record to be updated
 //                // You need to replace EMPLOYEE_ID with the actual ID value
 //                String updateQuery = "UPDATE add_employee SET name='" + name + "', age='" + age +
@@ -524,7 +524,7 @@ package Event.management.system;//package Event.management.system;
 //    public void actionPerformed(ActionEvent e) {
 //        if (e.getSource() == b1) {
 //            try {
-//                con c = new con();
+//                connect c = new connect();
 //                String mobileno = t2.getText();
 //                String deleteQuery = "DELETE FROM add_employee WHERE phone = ?";
 //                PreparedStatement preparedStatement = c.connection.prepareStatement(deleteQuery);
@@ -554,7 +554,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 public class Edit_employee extends JFrame implements ActionListener {
@@ -621,7 +620,7 @@ public class Edit_employee extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b1) {
             try {
-                con c = new con();
+                connect c = new connect();
                 String mobileno = t2.getText();
                 String deleteQuery = "DELETE FROM add_employee WHERE phone = ?";
                 PreparedStatement preparedStatement = c.connection.prepareStatement(deleteQuery);

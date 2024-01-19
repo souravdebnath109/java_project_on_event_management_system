@@ -29,7 +29,7 @@ public class Department  extends JFrame {
      //workbench er data  oikhane department name j table ase  oitar  data  aikhane  ante  hbe
 
 try{
-    con c=new con();//conection banailam
+    connect c=new connect();//conection banailam
    //query
     String departmentinfo="select * from department";
     ResultSet  resultSet=c.statement.executeQuery(departmentinfo);//resultset  e  data  store hoy

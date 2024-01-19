@@ -88,7 +88,7 @@
 //        c.setBounds(248,85,140,20);
 //        panel.add(c);
 //        try{
-//            con C=new con();
+//            connect C=new connect();
 //            ResultSet resultSet=C.statement.executeQuery("select * from customer");
 //           while (resultSet.next())
 //           {
@@ -158,7 +158,7 @@
 //        c.setBounds(100, 85, 250, 20);
 //        panel.add(c);
 //        try {
-//            con C = new con();
+//            connect C = new connect();
 //            ResultSet resultSet = C.statement.executeQuery("select * from customer");
 //            while (resultSet.next()) {
 //                c.add(resultSet.getString("number"));
@@ -226,7 +226,7 @@ public class Update_checkin extends JFrame {
         c.setBounds(248, 70, 150, 20); // Adjusted position
         panel.add(c);
         try {
-            con C = new con();
+            connect C = new connect();
             ResultSet resultSet = C.statement.executeQuery("select * from customer");
             while (resultSet.next()) {
                 c.add(resultSet.getString("number"));
@@ -336,7 +336,7 @@ public class Update_checkin extends JFrame {
 //            @Override
 //            public void actionPerformed(ActionEvent e) {
 //                try{
-//                con  C=new con();
+//                connect  C=new connect();
 //                String q=c.getSelectedItem();
 //                String allocated_event =textField8.getText();//evnt_2
 //                String name=textField3.getText();//name_1
@@ -361,7 +361,7 @@ public class Update_checkin extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    con C = new con();
+                    connect C = new connect();
                     String q = c.getSelectedItem();
                     String allocated_event = textField8.getText();
                     String name = textField3.getText();
@@ -416,7 +416,7 @@ public class Update_checkin extends JFrame {
                 String q = "SELECT * FROM customer WHERE number='" + id + "'";
 
                 try{
-                    con c=new con();
+                    connect c=new connect();
                     ResultSet resultSet=c.statement.executeQuery(q);
                     while(resultSet.next()){
                         textField3.setText(resultSet.getString("name"));//strorw hoy//done

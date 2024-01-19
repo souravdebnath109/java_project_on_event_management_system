@@ -144,7 +144,7 @@ public class New_customer  extends JFrame  implements ActionListener {
 
      c1= new Choice();
      try{//event show korbe
-         con c=new con();//conction banay
+         connect c=new connect();//conction banay
          ResultSet resultSet=c.statement.executeQuery("select * from   eeeventtt ");//data ber kore
 
           while(resultSet.next())
@@ -260,7 +260,7 @@ public class New_customer  extends JFrame  implements ActionListener {
 
      if(e.getSource()==add)
      {
-  con c =new con();//connection
+  connect c =new connect();//connection
          //data ber kore
          String  radiobtn=null;
          if(r1.isSelected())

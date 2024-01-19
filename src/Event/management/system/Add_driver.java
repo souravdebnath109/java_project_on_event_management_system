@@ -4,8 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Set;
-import java.util.jar.JarEntry;
 
 public class Add_driver extends JFrame  implements ActionListener {
     JTextField nameText,ageText,carcText, carnText,locText;
@@ -225,7 +223,7 @@ public class Add_driver extends JFrame  implements ActionListener {
             String location=locText.getText();
 
             try{
-        con c =new con();
+        connect c =new connect();
         //query  er  jonno
         String q="insert into add_driver values('"+name+"','"+age+"','"+gender+"','"+company+"','"+carname+"','"+available+"','"+location+"')";
         c.statement.executeUpdate(q);

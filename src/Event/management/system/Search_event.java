@@ -153,7 +153,7 @@ JLabel searchevent=new JLabel("search   for event");
 
 try
 {
-    con c=new con();
+    connect c=new connect();
     String q="select * from eeeventtt";
     ResultSet resultSet=c.statement.executeQuery(q);//query  data  of table  ber  hobe
     table.setModel(DbUtils.resultSetToTableModel(resultSet));//table  e  query  er  result k  nilam
@@ -209,7 +209,7 @@ panel.add(back );
             String Q="select * from eeeventtt where offer='"+choice.getSelectedItem()+"'";//change  lagbe
             String Q1="select * from eeeventtt where Availability='Available'  And offer='"+choice.getSelectedItem()+"'";//change  lagbe
            try{
-               con c =new con();
+               connect c =new connect();
                ResultSet resultSet=c.statement.executeQuery(Q);
                table.setModel(DbUtils.resultSetToTableModel(resultSet));
 

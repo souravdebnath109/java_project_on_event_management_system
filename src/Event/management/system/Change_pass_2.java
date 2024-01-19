@@ -112,7 +112,7 @@
 //            @Override
 //            public void actionPerformed(ActionEvent e) {
 //                try{
-//                    con C=new con();
+//                    connect C=new connect();
 //                    String name=changenamee.getText();
 //                    String pass=newPasswordd.getText();
 //                    C.statement.executeUpdate("update login2 set user_name='"+name+"',password='"+pass+"'");
@@ -187,7 +187,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.*;
 
 public class Change_pass_2 extends JFrame {
 
@@ -250,12 +249,12 @@ public class Change_pass_2 extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 //                try {
-//                    con C=new con();
+//                    connect C=new connect();
 //                   // Class.forName("com.mysql.cj.jdbc.Driver");
-//                   // Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name", "root", "your_password");
+//                   // Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name", "root", "your_password");
 //                    String name = changenamee.getText();
 //                    String pass = newPasswordd.getText();
-//                   // Statement statement = con.createStatement();
+//                   // Statement statement = connect.createStatement();
 //                  C.statement.executeUpdate("update login2 set user_name='" + name + "', password='" + pass + "'");
 //                    JOptionPane.showMessageDialog(null,"updated Sucessfully");
 //                    setVisible(false);
@@ -272,7 +271,7 @@ public class Change_pass_2 extends JFrame {
                 //try-1
 
                 try {
-                    con C = new con();
+                    connect C = new connect();
                     String name = changenamee.getText();
                     String pass = newPasswordd.getText();
                     C.statement.executeUpdate("update login2 set user_name='" + name + "', password='" + pass + "'");

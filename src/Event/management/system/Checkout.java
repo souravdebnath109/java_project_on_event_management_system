@@ -85,7 +85,7 @@ JLabel labelcheckouttime = new JLabel(""+date);
         labelcheckouttime.setForeground(Color.WHITE);
         panel.add(labelcheckouttime);
         try{
-            con c=new con();
+            connect c=new connect();
             ResultSet  resultSet=c.statement.executeQuery("select * from customer");
             while(resultSet.next())
             {
@@ -110,7 +110,7 @@ JLabel labelcheckouttime = new JLabel(""+date);
               //  System.out.println("Check-out button clicked");
 
                 try {
-                    con cv = new con();
+                    connect cv = new connect();
                     cv.statement.executeUpdate("delete from customer where number ='" + Customer.getSelectedItem() + "'");//data delte hoise
                     cv.statement.executeUpdate("update eeeventtt set availability ='Available' where event_no='" +labeleventnumber.getText() + "'");//availability and ocuupied kore
                     //cv.statement.executeUpdate("update eeeventtt set availability ='Available' where event_no='3'");//availability and ocuupied kore
@@ -132,7 +132,7 @@ JLabel labelcheckouttime = new JLabel(""+date);
         check.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                con c=new con();
+                connect c=new connect();
                 try{
                   ResultSet  resultSet=c.statement.executeQuery("select * from customer where number ='"+Customer.getSelectedItem()+"' ");
                   while (resultSet.next())

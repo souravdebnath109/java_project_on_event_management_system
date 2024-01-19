@@ -41,7 +41,7 @@ public class Customer_information extends JFrame
 
 
 try{
-    con c=new con();
+    connect c=new connect();
     String q="select  * from customer";//table  er  nam
     ResultSet resultSet=c.statement.executeQuery(q);//query theke j data ase  ta  ase  resulkt set er vitore store hbe
     table.setModel(DbUtils.resultSetToTableModel(resultSet));//data ber hoye  table  e  store hoise

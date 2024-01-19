@@ -183,7 +183,7 @@ import java.awt.event.ActionListener;
 //     {
 //         try{//
 //             //obj of  database for connection
-//            con c=new con();
+//            connect c=new connect();
 //            //1st e  sob data  extract kore string typre  e  rakhlam
 //            String eventname=t2.getText();//for event name
 //            String offer=(String) t5.getSelectedItem();//for combox
@@ -387,7 +387,7 @@ public  class Add_event extends  JFrame  implements  ActionListener{
         if(e.getSource()==b1)
         {
             try{
-                con c =new con();
+                connect c =new connect();
                 String eventno=t2.getText();
                 String  ava=(String)t3.getSelectedItem();
                 String   event_name= t4.getText();

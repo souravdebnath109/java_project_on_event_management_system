@@ -257,7 +257,7 @@ public class Add_employee extends JFrame implements ActionListener {
             }
             //connection  crt kore
             try{
-                con c=new con();//concetion er object
+                connect c=new connect();//concetion er object
                 //value table onusare  aita  query chalay
                 String q="insert into add_employee values('"+ name+"','"+ age+"','"+ gender+"','"+job+"','"+ salary+"','"+ phone+"','"+ email+"')";
                 c.statement.executeUpdate(q);

@@ -25,7 +25,7 @@ public class Managerinfo extends JFrame {
         panel.add(table);
         //data  ber korbo
 //        try{
-//            con c =new con();
+//            connect c =new connect();
 //            String Employeesql="select * from  add_employee";//ber korrlam
 //            ResultSet resultSet=c.statement.executeQuery(Employeesql);//data ber kore store korlma
 //            table.setModel(DbUtils.resultSetToTableModel(resultSet));//pass hoy to tavble
@@ -40,7 +40,7 @@ public class Managerinfo extends JFrame {
 //        }
         try
         {
-         con c =new con();
+         connect c =new connect();
          String q="select * from add_employee where job='Manager' ";
          //resultset
             ResultSet resultSet=c.statement.executeQuery(q);//store hoy

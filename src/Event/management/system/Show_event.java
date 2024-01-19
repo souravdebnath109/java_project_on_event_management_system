@@ -55,7 +55,7 @@ public class Show_event  extends JFrame {
         c.setBounds(248, 70, 150, 20); // Adjusted position
         panel.add(c);
         try {
-            con C = new con();
+            connect C = new connect();
             ResultSet resultSet = C.statement.executeQuery("select * from customer");
             while (resultSet.next()) {
                 c.add(resultSet.getString("number"));
@@ -116,7 +116,7 @@ public class Show_event  extends JFrame {
 //            @Override
 //            public void actionPerformed(ActionEvent e) {
 //                try {
-//                    con C = new con();
+//                    connect C = new connect();
 //                    String q = c.getSelectedItem();
 //                    String allocated_event = textField8.getText();
 //                    String name = textField3.getText();
@@ -149,7 +149,7 @@ public class Show_event  extends JFrame {
 //            @Override
 //            public void actionPerformed(ActionEvent e) {
 //                try {
-//                    con C = new con();
+//                    connect C = new connect();
 //                    String q = c.getSelectedItem();
 //                    String eventNo = textField8.getText();
 //                    String availability = "available"; // Set the text to "available"
@@ -200,7 +200,7 @@ public class Show_event  extends JFrame {
 
 
                 try{
-                    con c=new con();
+                    connect c=new connect();
                     ResultSet resultSet=c.statement.executeQuery(q);
                     while(resultSet.next()){
 //                        textField3.setText(resultSet.getString("name"));//strorw hoy//done

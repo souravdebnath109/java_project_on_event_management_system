@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.PreparedStatement;
 
 public class Change_password  extends JFrame {
     Change_password(){
@@ -108,7 +107,7 @@ public class Change_password  extends JFrame {
            @Override
            public void actionPerformed(ActionEvent e) {
                try{
-                   con C=new con();
+                   connect C=new connect();
                    String name=changenamee.getText();
                    String pass=newPasswordd.getText();
                    C.statement.executeUpdate("update login set username='"+name+"',password='"+pass+"'");

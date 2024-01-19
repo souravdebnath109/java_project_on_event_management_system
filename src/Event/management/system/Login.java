@@ -9,7 +9,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.net.URL;
 import java.sql.ResultSet;
 
 public class Login extends JFrame  implements ActionListener {
@@ -130,7 +129,7 @@ public class Login extends JFrame  implements ActionListener {
         if(e.getSource()==b1)//login button  e  click korle
         {
             try {
-                con c=new con();//object
+                connect c=new connect();//object
                 String user=textField1.getText();//user ja  input  dibe ta  aikhane  store hbe
                 String pass=passwordField1.getText();
                 //chk  j   sheet  a  ase  kina

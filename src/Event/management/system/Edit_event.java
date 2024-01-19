@@ -158,7 +158,7 @@
 //        if (e.getSource() == b1) {
 //            try {
 //                //obj of database for connection
-//                con c = new con();
+//                connect c = new connect();
 //                //1st e sob data extract kore string type e rakhlam
 //                String eventname = t2.getText();
 //                String offer = (String) t5.getSelectedItem();
@@ -209,7 +209,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 public class Edit_event extends JFrame implements ActionListener {
@@ -316,7 +315,7 @@ public class Edit_event extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b1) {
             try {
-                con c = new con();
+                connect c = new connect();
                 String eventname = t2.getText();
                 String offer = (String) t5.getSelectedItem();
                 String price = t4.getText();

@@ -48,7 +48,7 @@ public class Pick_up extends JFrame {
           panel.add(c);
 
           try{
-         con C=new con();
+         connect C=new connect();
          //query
               ResultSet  resultSet=C.statement.executeQuery("select * from add_driver");
               while (resultSet.next())
@@ -69,7 +69,7 @@ public class Pick_up extends JFrame {
           table.setForeground(Color.WHITE);
           panel.add(table);
           try{
-con C=new con();
+connect C=new connect();
 String q="select * from add_driver";//  q  a  save  korlam
 ResultSet resultSet=C.statement.executeQuery(q);//query kore
               table.setModel(DbUtils.resultSetToTableModel(resultSet));
@@ -157,7 +157,7 @@ gender.setForeground(Color.WHITE);
            public void actionPerformed(ActionEvent e) {
                String q="select * from add_driver where carname='"+c.getSelectedItem()+"' ";//dropdown tai get selected item kora hoise
                try{
-  con c =new con();
+  connect c =new connect();
   ResultSet resultSet=c.statement.executeQuery(q);//store hoise
                    table.setModel(DbUtils.resultSetToTableModel(resultSet));
 

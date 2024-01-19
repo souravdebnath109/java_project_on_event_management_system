@@ -154,7 +154,7 @@ public class Book_driver  extends JFrame implements ActionListener {
             String location = locationtext.getText();
 
             try {
-                con c = new con();
+                connect c = new connect();
                 String query = "UPDATE add_driver SET available = 'no' WHERE name = ? AND location = ?";
                 PreparedStatement pstmt = c.connection.prepareStatement(query);
                 pstmt.setString(1, name);

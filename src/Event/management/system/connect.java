@@ -11,11 +11,11 @@ import java.sql.Statement;
 
 //CON MANE CONNECTION WITH DATABASE MAINLY
 public class connect {
+    Connection  connection;
+    Statement statement;
 
+   // public static void main(String[] args) {
 
-    public static void main(String[] args) {
-        public Connection  connection;
-        Statement statement;
     public connect()
         {
             try{
@@ -32,8 +32,10 @@ public class connect {
             }
 
         }
-    }
 
+    public static void main(String[] args) {
+
+    }
 
 
 
